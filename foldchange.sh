@@ -3,9 +3,9 @@
 #1. IMPORT SEQ DATA INTO tempfiles DIRECTORY
 ####Make a check for if there are files aready in tempdata or files in directory?
 echo "Importing seq data..."
-mkdir seqdata
+# mkdir seqdata
 mkdir temp
-cp -u /localdisk/data/BPSM/ICA1/fastq/* ./seqdata
+# cp -u /localdisk/data/BPSM/ICA1/fastq/* ./seqdata
 awk 'BEGIN{FS="\t";}{print $1,$2,$3,$4,$5}' ./seqdata/Tco2.fqfiles > ./temp/report.txt
 echo "Imported data and created tempdir and base report.txt"
 
@@ -70,7 +70,7 @@ cp ./temp/reportfinal.txt ./RESULTS/fastqcSummaryReport.txt
 #3. IMPORT T.congo GENOME SEQ AND .bed FILE INTO refseqdata and uncompress .gz
 echo "Importing refseq data..."
 
-mkdir refseqdata
+# mkdir refseqdata
 cp -u /localdisk/data/BPSM/ICA1/Tcongo_genome/* ./refseqdata/
 gzip -d ./refseqdata/TriTrypDB-46_TcongolenseIL3000_2019_Genome.fasta.gz
 cp -ur /localdisk/data/BPSM/ICA1/* ./refseqdata/

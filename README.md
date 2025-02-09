@@ -12,6 +12,12 @@ Differential gene expression analysis is a method used to identify genes whose e
 
 ## Getting Started
 
+1. git clone the repo dawg
+2. In ./seqdata place bulk RNAseq data in .fq.gz format. Also provide .fqfiles for metadata (example .fqfiles given for _Trypanosoma congolense_).
+3. In ./refseqdata place reference genome in .bed format. Can be downloaded from [NCBI RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)
+4. Run foldchange.sh to gather gene expression fold changes.
+5. 
+
 
 
 ### Adding new deconvolution methods
@@ -19,6 +25,7 @@ Differential gene expression analysis is a method used to identify genes whose e
 
 ### Dependencies
 
+[FastqQC](https://github.com/s-andrews/FastQC)
 
 ### Installing
 
