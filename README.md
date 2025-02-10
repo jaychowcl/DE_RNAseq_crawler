@@ -38,8 +38,11 @@ Differential gene expression analysis is a method used to identify genes whose e
 ### Dependencies
 
 [FastqQC](https://github.com/s-andrews/FastQC)
+
 [bedtools](https://github.com/arq5x/bedtools2)
+
 [samtools](https://github.com/samtools/samtools)
+
 [bowtie2](https://github.com/BenLangmead/bowtie2)
 
 library(httr)
