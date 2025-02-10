@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# DE_RNAseq_crawler
+
+![Picture3](https://github.com/user-attachments/assets/328450ff-97ba-4669-b497-7e24c4105b03)
 
 A differential expression analysis pipeline for bulk RNAseq data with Gene of Interest (GOI) data fetching into ENSEMBLE, UNIPROT & Biogrid databases for protein data and pathway analysis. 
 
@@ -18,9 +19,6 @@ Differential gene expression analysis is a method used to identify genes whose e
 4. Run foldchange.sh to gather gene expression fold changes.
 5. 
 
-
-
-### Adding new deconvolution methods
 
 
 ### Dependencies
