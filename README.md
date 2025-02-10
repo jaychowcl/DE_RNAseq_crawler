@@ -31,7 +31,7 @@ Differential gene expression analysis is a method used to identify genes whose e
 4. Set significant DE fold change threshold (Default: >=2)
 6. Run foldchange.sh to gather gene expression fold changes. This will also automatically run GOI_crawler.R to gather protein and pathway data from different databases to place into a MySQL database.
 
-(Note: GOI_crawler can also be run independently on a BEDFILE with the foldchange in the last column.)
+(Note: GOI_crawler can also be run independently on a BED file with the foldchange in the last column.)
 
 
 
