@@ -44,9 +44,15 @@ capitalize <- function(x){
 # querygenes <- c("ENSMUSG00000015002","ENSMUSG00000017548","ENSMUSG00000032333","ENSMUSG00000036202","ENSMUSG00000041272","ENSMUSG00000050953","ENSMUSG00000058589","ENSMUSG00000064722","ENSMUSG00000074830","ENSMUSG00000078592")
 
 #read query from csv file and convert to list (UNCOMMENT TO USE THIS FUNCTION)
-querygenes <-read.csv("./GeneIdentifiers.csv", header=FALSE)
-querygenes <-as.character(querygenes)
+# querygenes <-read.csv("./GeneIdentifiers.csv", header=FALSE)
+# querygenes <-as.character(querygenes)
 
+#DE_RNAseq_crawler
+querygenes <- read.table("./DE_genes.txt", header=TRUE, sep="\t")
+
+################# Filter for DE genes  #################
+
+querygenes <- querygenes[querygenes[, 13] > 2, 4]
 
 ################# Creating Dataframe Columns  #################
 #creating intial vectors to create dataframe later

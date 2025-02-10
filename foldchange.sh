@@ -397,6 +397,8 @@ mkdir ./RESULTS/FoldChanges
 while read rangecompare
 do
 
-paste ./refseqdata/TriTrypDB-46_TcongolenseIL3000_2019.bed ./foldchange/${refsample}_${reftime}_${reftreat}_vs_${rangecompare}.txt > ./RESULTS/FoldChanges/${refsample}_${reftime}_${reftreat}_vs_${rangecompare}.txt
+paste ./refseqdata/TriTrypDB-46_TcongolenseIL3000_2019.bed ./foldchange/${refsample}_${reftime}_${reftreat}_vs_${rangecompare}.txt > ./RESULTS/FoldChanges/${refsample}_${reftime}_${reftreat}_vs_${rangecompare}.txt > ./DE_genes.txt
 
 done < ./temp/rangecompare.txt
+
+Rscript ./GOI_crawler.R
