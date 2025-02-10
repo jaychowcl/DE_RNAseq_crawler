@@ -1,10 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Picture3](https://github.com/user-attachments/assets/328450ff-97ba-4669-b497-7e24c4105b03)
+![Picture4](https://github.com/user-attachments/assets/6b855816-70d5-40e9-bb81-1cc0c8d1aad2)
 
 A differential expression analysis pipeline for bulk RNAseq data with Gene of Interest (GOI) data fetching into ENSEMBLE, UNIPROT & Biogrid databases for protein data and pathway analysis. 
 
 This is NOT reccomemded for any serious DE analysis as it lacks sufficient robustness and statistical rigor. Please use a more standard FASTQC -> cutadapt -> STAR -> FeatureCounts -> [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)/[limma](https://bioconductor.org/packages/release/bioc/html/limma.html)/[edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html) pipeline. 
+
+Please see DE_RNAseq_crawler.pdf for more details.
  
 ## Description
 
