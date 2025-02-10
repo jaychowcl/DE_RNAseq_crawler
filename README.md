@@ -48,15 +48,25 @@ Differential gene expression analysis is a method used to identify genes whose e
 [bowtie2](https://github.com/BenLangmead/bowtie2)
 
 library(httr)
+
 library(jsonlite)
+
 library(xml2)
+
 library(RCurl)
+
 library(curl)
+
 library(xml2)
+
 library(rentrez)
+
 library(RMySQL)
+
 library(queryup)
+
 library(argparser)
+
 
 
 ## Authors
